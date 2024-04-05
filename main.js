@@ -11,6 +11,7 @@ function makeBoard(height, width) {
         for (let j = 1; j <= width; j++) {
             const square = document.createElement("div")
             square.className = j
+            square.innerText = " "
             square.classList.add("empty")
             square.classList.add("square")
             row.append(square)
@@ -43,7 +44,6 @@ for (let square of squares) {
         const sqr = e.target
         const colNumber = sqr.parentNode.id
         const column = document.getElementById(`${colNumber}`)
-        console.log(column.childNodes[0].style)
         for (let i = column.childNodes.length - 1; i >= 0; i--) {
             if (column.childNodes[i].style.background === "") {
                 const attribute = column.childNodes[i].getAttribute("class")
@@ -84,7 +84,7 @@ for (let square of squares) {
         let rightDiaSix = squares[38].textContent + squares[33].textContent + squares[28].textContent + squares[23].textContent
 
         const winCon = [colOne, colTwo, colThree, colFour, colFive, colSix, colSeven, rowOne, rowTwo, rowThree, rowFour, rowFive, rowSix, leftDiaOne, leftDiaTwo, leftDiaThree, leftDiaFour, leftDiaFive, leftDiaSix, rightDiaOne, rightDiaTwo, rightColDiaThree, rightDiaFour, rightDiaFive, rightDiaSix]
-
+        console.log(rowFive)
         let win = false
         
         for (let wins of winCon) {
@@ -97,6 +97,7 @@ for (let square of squares) {
                 }
             }
             if (wins.includes("yyyy")) {
+                console.log(wins)
                 win = true
                 msg.innerText = "Red is the loser!!!"
                 modal.style.display = "block";
