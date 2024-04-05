@@ -49,6 +49,7 @@ h1 {
 }
 
 .connect-four {  
+  width: 1100px;
 background: blue;
   margin: auto;
   box-sizing: border-box;
