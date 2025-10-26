@@ -6,73 +6,73 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Raleway", sans-serif;
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.icon {
+  background: black;
+  border-style: double;
+  border: 2.5px solid white;
+  border-radius: 17.5%;
 }
 
 #connect {
-    font-size: 3em;
-    background: black;
-    color: white;
-    border-style: double;
-    border: 5px solid white;
-    border-radius: 35%;
+  font-size: 1.5em;
+  color: white;
 }
 
 #four {
-    font-size: 6em;
-    background: black;
-    color: red;
-    border-style: double;
-    border: 5px solid white;
-    border-radius: 35%;
+  font-size: 3em;
+  color: red;
 }
 
 .dropButtons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    input {
-        background: white;
-        margin-left: 14px;
-        margin-right: 14px;
-        height: 120px;
-        width: 120px;
-        border: 15px solid blue;
-        border-radius: 50%;
-        font-size: 2em;
-        font-weight: bold;         
-    }
+  input {
+    background: white;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 60px;
+    width: 60px;
+    border: 7.5px solid blue;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: bold;
+  }
 }
 
-.connect-four {  
-  width: 1100px;
-background: blue;
+.connect-four {
+  width: 550px;
+  background: blue;
   margin: auto;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .square {
-background: white;
-  height: 120px;
-  width: 120px;
-  border: 15px solid blue;
+  background: white;
+  height: 60px;
+  width: 60px;
+  border: 7.5px solid blue;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
 }
 
 .square:hover {
-  background: lightblue
+  background: lightblue;
 }
 
 .square:active {
@@ -81,7 +81,7 @@ background: white;
 
 #wrapper {
   min-height: 90%;
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
 
 nav {
@@ -90,19 +90,21 @@ nav {
 }
 
 button {
-  padding: 1em;
+  padding: 5px;
   font-family: "Raleway";
   font-weight: bold;
   font-size: 1em;
   display: block;
-  margin: auto;
+  margin: 10px auto 5px;
+  color: white;
   background: red;
+  border-radius: 50%;
 }
 
 a {
   text-decoration: none;
   color: plum;
-  font-size: 2em;
+  font-size: 1em;
 }
 a:hover {
   background-color: blanchedalmond;
@@ -110,28 +112,23 @@ a:hover {
 }
 
 .modal {
+  width: 550px;
   display: none;
-  position: fixed;
-  z-index: 1; 
-  left: 25%;
-  bottom: 1%;
-  width: 50%;
-  overflow: auto;
   text-align: center;
+  margin: auto;
 }
 
 .modal-content {
   background-color: black;
   margin: auto;
-  padding: 0px;
+  padding: 0;
   border: none;
-  width: 80%;
 }
 
 .close {
   color: white;
   float: right;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -143,6 +140,7 @@ a:hover {
 }
 
 p {
-  color: white;
-  font-size: 450%
+  font-size: 225%;
+  width: auto;
+  margin-top: 10px;
 }
